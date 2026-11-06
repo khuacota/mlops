@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: late-delivery-api
+  labels:
+    app: late-delivery-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: late-delivery-api
+  template:
+    metadata:
+      labels:
+        app: late-delivery-api
+    spec:
+      containers:
+        - name: api
+          image: late-delivery-api:1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 20
+            periodSeconds: 10
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+            limits:
+              memory: "768Mi"
