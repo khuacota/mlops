@@ -1,0 +1,1 @@
+![Experimento](doc/fase1_mlflow/arquitectura.png)
