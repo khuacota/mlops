@@ -1,1 +1,1 @@
-![Experimento](doc/fase1_mlflow/arquitectura.png)
+![Arquitectura: el modelo viaja de MLflow a 3 pods](img/arquitectura.png)
