@@ -1,13 +1,13 @@
 # Instrucciones de ejecución
 
-Pasos para ejecutar el proyecto de predicción de pedidos atrasados (logística) desde cero.
+Pasos para ejecutar el proyecto de predicción de pedidos atrasados (logística).
 
 ## 1. Crear y activar el entorno virtual
 
-Desde la carpeta raíz del proyecto (`mlops-proyecto`):
+Desde la carpeta raíz del proyecto (`mlops`):
 
 ```powershell
-py -3.11 -m venv .venv
+python -m venv venv
 .venv\Scripts\activate
 ```
 
@@ -16,8 +16,8 @@ La terminal debe mostrar el prefijo `(.venv)`.
 ## 2. Instalar dependencias
 
 ```powershell
-.venv\Scripts\python.exe -m pip install --upgrade pip
-.venv\Scripts\python.exe -m pip install -r requirements.txt
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
 ---
@@ -31,10 +31,10 @@ La terminal debe mostrar el prefijo `(.venv)`.
 
 ### Terminal 2: Generar datos, entrenar y registrar el modelo
 ```powershell
-.venv\Scripts\python.exe src\generate_data.py
-.venv\Scripts\python.exe src\train.py
-.venv\Scripts\python.exe src\register_model.py
-.venv\Scripts\python.exe src\export_model.py
+python src\preparar_datos.py
+python src\entrenar_modelo.py
+python src\evaluar_modelo.py
+
 ```
 
 Comprobación en interfaz web:

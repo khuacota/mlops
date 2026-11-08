@@ -1,8 +1,10 @@
-# MLOps: Predicción de Pedidos Atrasados (Logística)
+# Proyecto Final MLOps: Predicción de Pedidos Atrasados (Logística)
 
-![CI](https://github.com/tu-usuario/mlops-proyecto/actions/workflows/ci.yml/badge.svg)
+## Grupo 
+- Karen Huacota 
+- Yesica Luna  
 
-Proyecto integrador de **MLOps**: un sistema de machine learning para predecir retrasos en entregas logísticas, llevado desde la etapa de experimentación y registro hasta un despliegue reproducible en **Kubernetes**, instrumentado con monitoreo continuo de **Data Drift y Concept Drift**, pruebas automatizadas y una interfaz web interactiva.
+Proyecto de MLOps: un sistema de machine learning para predecir retrasos en entregas logísticas, llevado desde la etapa de experimentación y registro hasta un despliegue reproducible en **Kubernetes**, instrumentado con monitoreo continuo de **Data Drift y Concept Drift**, pruebas automatizadas y una interfaz web interactiva.
 
 ---
 
